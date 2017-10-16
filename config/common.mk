@@ -53,6 +53,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/mdroid/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
 
+# MDroid-specific broadcast actions whitelist
+PRODUCT_COPY_FILES += \
+    vendor/mdroid/config/permissions/mdroid-sysconfig.xml:system/etc/sysconfig/mdroid-sysconfig.xml
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/mdroid/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
