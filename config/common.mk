@@ -158,6 +158,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MDroid-Fonts
 
+# Analog clocks
+PRODUCT_PACKAGES += \
+    AnalogDeadpool \
+    AnalogDu
+
 # Turbo
 PRODUCT_PACKAGES += \
     Turbo \
