@@ -15,6 +15,7 @@
 -->
 <resources>
     <string name="lockscreen_clock_selection_analog_deadpool">Аналоговий (deadpool)</string>
+    <string name="lockscreen_clock_selection_analog_deepnight">Аналоговий (deep night)</string>
     <string name="lockscreen_clock_selection_analog_du">Аналоговий (du)</string>
 </resources>
 
