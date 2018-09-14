@@ -9,8 +9,10 @@ TARGET_PRODUCT_SHORT := $(subst mdroid_,,$(TARGET_PRODUCT_SHORT))
 
 ifeq ($(MDROID_BUILDTYPE), UNOFFICIAL)
     MDROID_VERSION := $(MDROID_REVISION)-$(MDROID_BUILDTYPE)-$(TARGET_PRODUCT_SHORT)-$(shell date +"%Y%m%d-%H%M%S")
+    ROM_FINGERPRINT := MiracleDROID/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date +"%Y%m%d-%H%M%S")
 else
     MDROID_VERSION := $(MDROID_REVISION)-$(MDROID_BUILDTYPE)-$(TARGET_PRODUCT_SHORT)-$(shell date +"%Y%m%d")
+    ROM_FINGERPRINT := MiracleDROID/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date +"%Y%m%d")
 endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID="$(BUILD_ID)-$(shell whoami)@$(shell hostname)"
@@ -19,6 +21,7 @@ PRODUCT_GENERIC_PROPERTIES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.mdroid.version=$(MDROID_VERSION) \
     ro.modversion=MDROIDROM-$(MDROID_VERSION) \
+    ro.mdroid.fingerprint=$(ROM_FINGERPRINT) \
     ro.mdroid.buildtype=$(MDROID_BUILDTYPE)
 
 ifeq ($(MDROID_BUILDTYPE), Official)
