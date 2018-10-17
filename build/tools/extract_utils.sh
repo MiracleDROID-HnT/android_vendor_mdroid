@@ -1049,6 +1049,7 @@ function extract() {
 
             if [ "${FOUND}" = false ]; then
                 printf '    !! file not found in source\n'
+                continue
             fi
         fi
 
