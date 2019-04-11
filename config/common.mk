@@ -189,8 +189,6 @@ PRODUCT_PACKAGES += \
     MDroidGooglePackageInstallerDarkTheme \
     MDroidEmailBlackTheme \
     MDroidEmailDarkTheme \
-    MDroidFMRadioBlackTheme \
-    MDroidFMRadioDarkTheme \
     MDroidElevenBlackTheme \
     MDroidElevenDarkTheme \
     MDroidRecorderBlackTheme \
@@ -220,6 +218,16 @@ PRODUCT_PACKAGES += \
     MDroidTealAccent \
     MDroidWhiteAccent \
     MDroidYellowAccent
+
+ifeq ($(WITH_QCOM_FM),true)
+PRODUCT_PACKAGES += \
+    MDroidFM2BlackTheme \
+    MDroidFM2DarkTheme
+else
+PRODUCT_PACKAGES += \
+    MDroidFMRadioBlackTheme \
+    MDroidFMRadioDarkTheme
+endif
 
 # Fonts
 PRODUCT_PACKAGES += \
