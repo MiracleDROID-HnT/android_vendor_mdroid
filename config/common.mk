@@ -217,7 +217,11 @@ PRODUCT_PACKAGES += \
     MDroidRedAccent \
     MDroidTealAccent \
     MDroidWhiteAccent \
-    MDroidYellowAccent
+    MDroidYellowAccent \
+    QStileCircleTrim \
+    QStileDefault \
+    QStileDualToneCircle \
+    QStileSquircleTrim
 
 ifeq ($(WITH_QCOM_FM),true)
 PRODUCT_PACKAGES += \
