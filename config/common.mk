@@ -154,86 +154,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_font.png
 
-# Berry styles
-PRODUCT_PACKAGES += \
-    MDroidSystemBlackTheme \
-    MDroidSystemDarkTheme \
-    MDroidSystemUIBlackTheme \
-    MDroidSystemUIDarkTheme \
-    MDroidNotificationBlackTheme \
-    MDroidNotificationDarkTheme \
-    MDroidSettingsBlackTheme \
-    MDroidSettingsDarkTheme \
-    MDroidDialerBlackTheme \
-    MDroidDialerDarkTheme \
-    MDroidEbayBlackTheme \
-    MDroidEbayDarkTheme \
-    MDroidContactsBlackTheme \
-    MDroidContactsDarkTheme \
-    MDroidFilesBlackTheme \
-    MDroidFilesDarkTheme \
-    MDroidMessagingBlackTheme \
-    MDroidMessagingDarkTheme \
-    MDroidPhoneBlackTheme \
-    MDroidPhoneDarkTheme \
-    MDroidTelecomBlackTheme \
-    MDroidTelecomDarkTheme \
-    MDroidCalculatorBlackTheme \
-    MDroidCalculatorDarkTheme \
-    MDroidGboardBlackTheme \
-    MDroidGboardDarkTheme \
-    MDroidGboardLightTheme \
-    MDroidCalendarBlackTheme \
-    MDroidCalendarDarkTheme \
-    MDroidGooglePackageInstallerBlackTheme \
-    MDroidGooglePackageInstallerDarkTheme \
-    MDroidEmailBlackTheme \
-    MDroidEmailDarkTheme \
-    MDroidElevenBlackTheme \
-    MDroidElevenDarkTheme \
-    MDroidRecorderBlackTheme \
-    MDroidRecorderDarkTheme \
-    MDroidXiaomiPartsBlackTheme \
-    MDroidXiaomiPartsDarkTheme \
-    MDroidBlackAccent \
-    MDroidBlueAccent \
-    MDroidBlueLightAccent \
-    MDroidBrownAccent \
-    MDroidCyanAccent \
-    MDroidGreenAccent \
-    MDroidGreenLightAccent \
-    MDroidLimeAccent \
-    MDroidGreyAccent \
-    MDroidGreyBlueAccent \
-    MDroidAmberAccent \
-    MDroidOrangeAccent \
-    MDroidOrangeDeepAccent \
-    MDroidPinkAccent \
-    MDroidPixelAccent \
-    MDroidNetflixAccent \
-    MDroidPurpleAccent \
-    MDroidPurpleDeepAccent \
-    MDroidIndigoAccent \
-    MDroidRedAccent \
-    MDroidTealAccent \
-    MDroidWhiteAccent \
-    MDroidYellowAccent \
-    QStileCircle \
-    QStileCircleTrim \
-    QStileDefault \
-    QStileDualToneCircle \
-    QStileSquircleTrim
-
-ifeq ($(WITH_QCOM_FM),true)
-PRODUCT_PACKAGES += \
-    MDroidFM2BlackTheme \
-    MDroidFM2DarkTheme
-else
-PRODUCT_PACKAGES += \
-    MDroidFMRadioBlackTheme \
-    MDroidFMRadioDarkTheme
-endif
-
 # Fonts
 PRODUCT_PACKAGES += \
     MDroid-Fonts
@@ -312,6 +232,9 @@ include vendor/mdroid/config/version.mk
 
 # MDROID OTA
 include vendor/mdroid/config/ota.mk
+
+# Themes
+include vendor/themes/config.mk
 
 # Permissions
 PRODUCT_PACKAGES += \
