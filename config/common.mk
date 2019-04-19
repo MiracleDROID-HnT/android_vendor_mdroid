@@ -218,6 +218,7 @@ PRODUCT_PACKAGES += \
     MDroidTealAccent \
     MDroidWhiteAccent \
     MDroidYellowAccent \
+    QStileCircle \
     QStileCircleTrim \
     QStileDefault \
     QStileDualToneCircle \
