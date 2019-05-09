@@ -67,6 +67,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/mdroid/prebuilt/etc/init/mdroid-adb.rc:system/etc/init/mdroid-adb.rc
 
+# smart charding
+PRODUCT_COPY_FILES += \
+    vendor/mdroid/prebuilt/etc/init/mdroid-init.rc:system/etc/init/mdroid-init.rc
+
 # i/o scheduler
 PRODUCT_COPY_FILES += \
     vendor/mdroid/prebuilt/etc/init/mdroid-iosched.rc:system/etc/init/mdroid-iosched.rc
