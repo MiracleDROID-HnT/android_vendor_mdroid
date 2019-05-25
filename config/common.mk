@@ -145,6 +145,7 @@ PRODUCT_PACKAGES += \
     Via \
     Gallery2 \
     Eleven \
+    Exchange2 \
     ExactCalculator \
     Substratum \
     Recorder \
