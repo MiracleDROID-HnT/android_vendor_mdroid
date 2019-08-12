@@ -42,6 +42,10 @@ else
     ro.device.cache_dir=/cache
 endif
 
+# Long screenshot
+PRODUCT_PACKAGES += \
+    Longshot
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/mdroid/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
