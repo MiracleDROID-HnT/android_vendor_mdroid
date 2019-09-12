@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Exports
 dir=$ANDROID_BUILD_TOP
